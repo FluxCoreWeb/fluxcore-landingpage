@@ -1,0 +1,203 @@
+.wrapperNossoTrab{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.landingPageInfo{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45.563rem;
+}
+.bgNossoTrabalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+}
+.imgNossoTrabalho{
+    width: 100%;
+    height: 45.563rem;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #621897;
+}
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    color: #000000;
+}
+
+.spanSubtitle{
+    font-weight: 700;
+}
+.textInfo{
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #000000;
+}
+.cardsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.bgProcess{
+    width: 100%;
+    background: linear-gradient(116.82deg, #D9D9D9 22.4%, #FFFFFF 100%);
+}
+.processoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+.titleProcess{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.438rem;
+    color: #621897;
+}
+.fundoEmb{
+    width: 702px;
+    height: 426.54px;
+    background: #FFFFFF;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1rem;
+    filter: blur(6px)
+}
+.titleFundoEmb{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: #000000;
+    user-select: none;
+}
+.subtitleFundoEmb{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000000;
+    user-select: none;
+}
+
+.cardDestaque{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 999;
+    width: 31.5rem;
+    height: 32.875rem;
+    padding: 1.5rem;
+    background: #FFFFFF;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.titleCard{
+    display: flex;
+    gap: 1rem;
+}
+
+.titleCard h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000000;
+}
+.titleCard img{
+    width: 2.438rem;
+}
+.subtitleCard{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.pagProcess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 4rem;
+}
+.pagProcess img{
+    cursor: pointer;
+}
+.pagProcess h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.circleSelected{
+    border: 3px solid #000000;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.circleSelect{
+    border: 1px solid #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.circleSelect:hover{
+    border: 2px solid #000000;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.divButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonBudget{
+    height: 3.625rem;
+    width: 13.938rem;
+    background: #621897;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.buttonBudget:hover{
+    background: #38085a;
+}
