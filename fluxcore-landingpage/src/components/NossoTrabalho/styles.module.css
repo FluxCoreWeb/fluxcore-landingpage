@@ -96,6 +96,7 @@
     font-weight: 400;
     font-size: 2.1rem;
     color: #000000;
+    user-select: none;
 }
 .subtitleFundoEmb{
     font-family: 'Poppins', sans-serif;
@@ -103,6 +104,7 @@
     font-weight: 400;
     font-size: 1.5rem;
     color: #000000;
+    user-select: none;
 }
 
 .cardDestaque{
@@ -140,4 +142,40 @@
     font-weight: 400;
     font-size: 1.2rem;
     color: #000000;
+}
+
+.pagProcess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 4rem;
+}
+.pagProcess img{
+    cursor: pointer;
+}
+.pagProcess h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.circleSelected{
+    border: 3px solid #000000;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.circleSelect{
+    border: 1px solid #000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+.circleSelect:hover{
+    border: 2px solid #000000;
+    cursor: pointer;
+    transform: scale(1.2);
 }
