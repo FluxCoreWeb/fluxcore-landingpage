@@ -5,7 +5,7 @@ function SobreNos() {
         <section className={styles.sobreSection}>
             <div className={styles.titleDiv}>
                 <h1>Conheça melhor a FLUXCORE</h1>
-                <img src='../public/fluxCoreIcon.svg'/>
+                <img src='../fluxCoreIcon.svg'/>
             </div>
             <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur. Netus justo nulla leo risus scelerisque vivamus pellentesque 
                 et feugiat. Tellus aliquet montes id eget. Integer eget platea euismod eleifend. Placerat convallis 
@@ -16,7 +16,7 @@ function SobreNos() {
             </p>
         </section>
         <div className={styles.hatIconDiv}>
-            <img className={styles.hatIcon} src='../public/hatIcon.svg'/>
+            <img className={styles.hatIcon} src='../hatIcon.svg'/>
         </div>
     </main>
   )

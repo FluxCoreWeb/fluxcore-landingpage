@@ -11,18 +11,21 @@ function Header() {
   function sobreNos(){
     navigate(`/sobre-nos`)
   }
+  function quemSomos(){
+    navigate(`/quem-somos`)
+  }
   return (
     <header className={styles.headerWrapper}>
       <section className={styles.sectionHeader}>
         <div className={styles.logoDiv}>
-          <img src='../public/iconLogo.svg'/>
+          <img src='../iconLogo.svg'/>
           <h1>FLUXCORE</h1>
         </div>
         <navbar className={styles.navbarHeaderWrapper}>
-          <img onClick={home} src='../public/homeIcon.svg'/>
+          <img onClick={home} src='../homeIcon.svg'/>
           <h2 onClick={nossoTrabalho}>NOSSO TRABALHO</h2>
           <h2 onClick={sobreNos}>SOBRE NÓS</h2>
-          <h2>QUEM SOMOS</h2>
+          <h2 onClick={quemSomos}>QUEM SOMOS</h2>
           <h2 className={styles.faleConoscoNavbar}>FALE CONOSCO</h2>
         </navbar>
       </section>

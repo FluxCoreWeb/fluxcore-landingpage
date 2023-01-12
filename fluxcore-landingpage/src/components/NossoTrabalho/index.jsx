@@ -2,19 +2,19 @@ import styles from './styles.module.css'
 import { useState } from 'react'
 function NossoTrabalho() {
   const [count, setCount] = useState(1)
-  const [img, setImg] = useState('../public/contactIcon.svg')
+  const [img, setImg] = useState('../contactIcon.svg')
   const title1 = 'Contato'
   const title2 = 'Contrato'
   const title3 = 'Início do Projeto'
   const title4 = 'Design'
   const title5 = 'Código'
   const title6 = 'Finalização'
-  const img1 = '../public/contactIcon.svg'
-  const img2 = '../public/contractIcon.svg'
-  const img3 = '../public/begIcon.svg'
-  const img4 = '../public/designIcon.svg'
-  const img5 = '../public/codIcon.svg'
-  const img6 = '../public/finishIcon.svg'
+  const img1 = '../contactIcon.svg'
+  const img2 = '../contractIcon.svg'
+  const img3 = '../begIcon.svg'
+  const img4 = '../designIcon.svg'
+  const img5 = '../codIcon.svg'
+  const img6 = '../finishIcon.svg'
   const text1 = 'Seja você que fale conosco ou nós que vamos até você, o primeiro passo é sempre muito importante: nele conheceremos você melhor e entenderemos o que deseja. Por isso, é muito importante que você nos deixe a par tanto das informações fundamentais do projeto quanto das suas expectativas para o nosso trabalho juntos. Não se preocupe, nós guiaremos esse contato e estaremos sempre disponíveis para dúvidas e colocações.'
   const text2 = 'Depois de conversarmos, a próxima etapa é o fechamento do contrato. É sempre importante que os termos de qualquer serviço prestado sejam redigidos e aprovados pelo prestador do serviço em questão e pelo empregador, afinal, trabalharemos todos juntos.'
   const text3 = 'Agora que já nos conhecemos e fechamos um contrato, daremos início ao projeto em si. Nessa fase, conversaremos com você sobre aspectos mais específicos do design e do funcionamento da sua Landing Page. Sabemos que é difícil lembrar de tudo, por isso, temos materiais preparados para ajudar você a escolher cores, fontes e inspirações.'
@@ -43,7 +43,7 @@ function NossoTrabalho() {
               Nisi eleifend arcu purus dolor neque blandit elit lacus nibh. Vitae mauris amet eu risus tortor orci euismod.</p>
           </div>
           <div className={styles.bgNossoTrabalho}>
-            <img className={styles.imgNossoTrabalho} src='../public/bgNossoTrabalho.svg'/>
+            <img className={styles.imgNossoTrabalho} src='../bgNossoTrabalho.svg'/>
           </div>
         </section>
         <div className={styles.bgProcess}>
@@ -133,7 +133,7 @@ function NossoTrabalho() {
                 </div>
             </div>
             <div className={styles.pagProcess}>
-              <img onClick={() => decCount()} src='../public/leftArrow.svg'/>
+              <img onClick={() => decCount()} src='../leftArrow.svg'/>
               <h1>{count}</h1>
               {count == 1 && <div className={styles.circleSelected}/>}
               {count != 1 && <div onClick={() => setCount(1)} className={styles.circleSelect}/>}
@@ -147,7 +147,7 @@ function NossoTrabalho() {
               {count != 5 && <div onClick={() => setCount(5)} className={styles.circleSelect}/>}
               {count == 6 && <div className={styles.circleSelected}/>}
               {count != 6 && <div onClick={() => setCount(6)} className={styles.circleSelect}/>}
-              <img onClick={() => sumCount()} src='../public/rightArrow.svg'/>
+              <img onClick={() => sumCount()} src='../rightArrow.svg'/>
             </div>
           </section>
         </div>
