@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import NossoTrabalho from "./components/NossoTrabalho";
 import SobreNos from "./components/SobreNos";
 import QuemSomos from "./components/QuemSomos";
+import { useState } from "react";
 function App() {
   return (
     <>

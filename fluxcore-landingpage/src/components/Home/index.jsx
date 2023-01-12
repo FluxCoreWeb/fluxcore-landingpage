@@ -11,7 +11,7 @@ function Home() {
                     Varius egestas amet cursus volutpat sollicitudin. Faucibus pretium pellentesque dui natoque quis libero.</p>
                     <div className={styles.buttonDiv}>
                         <button className={styles.buttonBudget}>Faça um orçamento</button>
-                        <button className={styles.buttonKnow}>Saiba mais</button>
+                        <a href='/sobre-nos'><button className={styles.buttonKnow}>Saiba mais</button></a>
                     </div>
                 </article>
                 <article className={styles.benefitsDiv}>
