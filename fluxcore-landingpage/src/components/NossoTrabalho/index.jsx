@@ -114,6 +114,9 @@ function NossoTrabalho() {
                 <p className={styles.subtitleCard}>
                   {text6}
                 </p>
+                <div className={styles.divButton}>
+                  <button className={styles.buttonBudget}>Faça um orçamento</button>
+                </div>
               </section>
               }
               <div className={styles.fundoEmb}>

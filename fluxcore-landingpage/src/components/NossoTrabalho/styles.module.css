@@ -179,3 +179,25 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+.divButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonBudget{
+    height: 3.625rem;
+    width: 13.938rem;
+    background: #621897;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.buttonBudget:hover{
+    background: #38085a;
+}
