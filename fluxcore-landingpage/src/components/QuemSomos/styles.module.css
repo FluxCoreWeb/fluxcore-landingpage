@@ -1,0 +1,159 @@
+.quemSomosWrapper{
+    background: linear-gradient(116.82deg, #D9D9D9 22.4%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.sectionQuemSomos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.titleDiv h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: #621897;
+}
+.titleDiv h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+.equipeSection{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.equipeWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipeIndividualDiv{
+    width: 23rem;
+    padding: 1.5rem;
+    height: 34rem;
+    background: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cargoDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.cargoTitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000000;
+}
+
+.cargoSubtitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    color: #621897;
+}
+
+.cargoText{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.redesDiv{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 64px;
+    background: #FFFFFF;
+    border-width: 0px 4px 4px 0px;
+    border-style: solid;
+    border-color: #621897;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.buttonRedes:hover{
+    transform: scale(1.1);
+    border-color: #38085a;;
+}
+
+.imgIcon{
+    width: 195px;
+    height: 195px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 1400px){
+    .cargoTitle{
+        font-size: 1.2rem;
+    }
+    .cargoSubtitle{
+        font-size: .8rem;
+    }
+    .titleDiv h1{
+        font-size: 3.2rem;
+    }
+    .titleDiv h3{
+        font-size: 1.8rem;
+    }
+    .imgIcon{
+        width: 140px;
+        height: 140px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+    .equipeIndividualDiv{
+        gap: 1.5rem;
+        height: 27rem;
+    }
+    .cargoText{
+        font-size: .9rem;
+    }
+  }

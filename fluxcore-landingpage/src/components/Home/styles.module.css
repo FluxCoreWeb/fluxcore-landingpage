@@ -4,6 +4,7 @@
     height: 100vh;
     width: 100%;
     position: absolute;
+    z-index: 2;
 }
 .infoWrapper{
     display: flex;
@@ -11,6 +12,7 @@
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 .divLeft{
     width: 50%;
@@ -106,3 +108,22 @@
 .subtitleBenefits{
     width: 90%;
 }
+
+@media (max-width: 1400px){
+    .title{
+      font-size: 2.5rem;
+     }
+    .subtitle{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #000000;
+    }
+    .benefitsInfoSquare{
+        font-size: .8rem;
+    }
+    .benefitsInfoSquare img{
+        width: 3.5rem;
+    }
+  }

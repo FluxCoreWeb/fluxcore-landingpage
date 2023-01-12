@@ -1,0 +1,57 @@
+.sobreWrapper{
+    height: 100vh;
+    background: linear-gradient(116.82deg, #D9D9D9 22.4%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapperSobre{
+    padding-top: 4rem;
+}
+.sobreSection{
+    display: flex;
+    align-items: flex-start;
+    width: 85%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 2rem;
+}
+.titleDiv{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.titleDiv h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #621897;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.subtitle{
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.hatIconDiv{
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+@media (max-width: 1400px){
+    .titleDiv h1{
+        font-size: 2.8rem;
+    }
+    .titleDiv img{
+        width: 9rem;
+    }
+  }

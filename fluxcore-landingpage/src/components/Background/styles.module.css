@@ -4,19 +4,26 @@
     height: 100vh;
 }
 
+.bgSection{
+    width: 100%;
+}
+
 .bgLine1{
     position: absolute;
     left: 0px;
     top: 0px;
+    opacity: .8;
 }
 
 .bgLine2{
     position: absolute;
     right: 0px;
     top: 0px;
+    opacity: .8;
 }
 .bgLine3{
     position: absolute;
     bottom: 0px;
     right: 25%;
+    opacity: .8;
 }

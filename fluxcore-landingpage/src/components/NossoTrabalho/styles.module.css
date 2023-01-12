@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     padding-bottom: 10rem;
     padding-top: 5rem;
 }
@@ -201,3 +201,18 @@
 .buttonBudget:hover{
     background: #38085a;
 }
+
+@media (max-width: 1400px){
+    .fundoEmb{
+        height: 20rem;
+    }
+    .fundoEmb p{
+        font-size: 1.2rem;
+    }
+    .cardDestaque{
+        height: 25rem;
+    }
+    .pagProcess{
+        padding-top: 3rem;
+    }
+  }
