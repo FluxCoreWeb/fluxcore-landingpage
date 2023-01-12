@@ -129,3 +129,31 @@
     border-radius: 100px;
     object-fit: cover;
 }
+
+@media (max-width: 1400px){
+    .cargoTitle{
+        font-size: 1.2rem;
+    }
+    .cargoSubtitle{
+        font-size: .8rem;
+    }
+    .titleDiv h1{
+        font-size: 3.2rem;
+    }
+    .titleDiv h3{
+        font-size: 1.8rem;
+    }
+    .imgIcon{
+        width: 140px;
+        height: 140px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+    .equipeIndividualDiv{
+        gap: 1.5rem;
+        height: 27rem;
+    }
+    .cargoText{
+        font-size: .9rem;
+    }
+  }

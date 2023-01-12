@@ -5,7 +5,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5rem;
+}
+
+.wrapperSobre{
+    padding-top: 4rem;
 }
 .sobreSection{
     display: flex;
@@ -41,4 +44,14 @@
     display: flex;
     width: 65%;
     margin: 0 auto;
+    padding-top: 1rem;
 }
+
+@media (max-width: 1400px){
+    .titleDiv h1{
+        font-size: 2.8rem;
+    }
+    .titleDiv img{
+        width: 9rem;
+    }
+  }

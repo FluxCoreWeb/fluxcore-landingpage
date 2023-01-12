@@ -24,7 +24,7 @@ function Header() {
   return (
     <header className={styles.headerWrapper}>
       <section className={styles.sectionHeader}>
-        <div className={styles.logoDiv}>
+        <div onClick={home} className={styles.logoDiv}>
           <img src='../iconLogo.svg'/>
           <h1>FLUXCORE</h1>
         </div>
