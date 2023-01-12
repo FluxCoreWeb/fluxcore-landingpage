@@ -11,6 +11,7 @@
     width: 100%;
     background: rgba(217, 217, 217, 0.8);
     position: absolute;
+    z-index: 2;
 }
 
 .sectionHeader{
@@ -40,12 +41,16 @@
     white-space: nowrap;
     gap: 1.5rem;
 }
+.navbarHeaderWrapper img{
+    cursor: pointer;
+}
 .navbarHeaderWrapper h2{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
     color: #000000;
+    cursor: pointer;
 }
 .faleConoscoNavbar{
     color: rgba(98, 24, 151, 1) !important;
