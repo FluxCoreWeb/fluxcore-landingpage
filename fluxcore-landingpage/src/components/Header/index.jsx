@@ -8,6 +8,9 @@ function Header() {
   function home(){
     navigate(`/`)
   }
+  function sobreNos(){
+    navigate(`/sobre-nos`)
+  }
   return (
     <header className={styles.headerWrapper}>
       <section className={styles.sectionHeader}>
@@ -18,7 +21,7 @@ function Header() {
         <navbar className={styles.navbarHeaderWrapper}>
           <img onClick={home} src='../public/homeIcon.svg'/>
           <h2 onClick={nossoTrabalho}>NOSSO TRABALHO</h2>
-          <h2>SOBRE NÓS</h2>
+          <h2 onClick={sobreNos}>SOBRE NÓS</h2>
           <h2>QUEM SOMOS</h2>
           <h2 className={styles.faleConoscoNavbar}>FALE CONOSCO</h2>
         </navbar>
