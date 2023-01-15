@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-function Header() {
+function Header({setModal}) {
   const url = window.location.pathname
   const navigate = useNavigate()
   function nossoTrabalho(){
@@ -52,11 +52,8 @@ function Header() {
             <div className={styles.lineBorda}/>
             }
           </div>
-          <div className={styles.textNavbar}>
+          <div onClick={() => setModal(true)} className={styles.textNavbar}>
             <h2 className={styles.faleConoscoNavbar}>FALE CONOSCO</h2>
-            {url == 4 &&
-            <div className={styles.lineBorda}/>
-            }
           </div>
         </section>
       </section>

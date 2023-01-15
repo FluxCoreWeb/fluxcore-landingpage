@@ -4,11 +4,15 @@ import Home from "./components/Home";
 import NossoTrabalho from "./components/NossoTrabalho";
 import SobreNos from "./components/SobreNos";
 import QuemSomos from "./components/QuemSomos";
+import Modal from "./components/Modal";
+import { useState } from "react";
 function App() {
+  const [modal, setModal] = useState(false);
   return (
     <>
       <Router>
-        <Header/>
+        {modal && <Modal setModal={setModal}/>}
+        <Header setModal={setModal}/>
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
           <Route exact path='/nosso-trabalho' element={<NossoTrabalho/>}></Route>
