@@ -201,6 +201,9 @@
 .buttonBudget:hover{
     background: #38085a;
 }
+.spanP {
+    color: rgba(98, 24, 151, 1);
+}
 
 @media (max-width: 1400px){
     .fundoEmb{
