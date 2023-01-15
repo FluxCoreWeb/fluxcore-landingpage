@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import { useRef } from 'react'
 import { useState } from 'react'
 function NossoTrabalho() {
   const [count, setCount] = useState(1)
@@ -21,6 +22,9 @@ function NossoTrabalho() {
   const text4 = 'Na quarta etapa a mágica começa: seu projeto vai sair do papel, Aqui, faremos um design especial pra você, de acordo cmo o que foi conversado durante o primeiro contato e a etapa anterior. Para garantir que a sua Landing Page será perfeita para você, estaremos sempre te atualizando e compartilhando cada decisão, sinta-se a vontade para fazer perguntas e colocações, afinal, o projeto é seu, nós apenas ajudaremos a tirá-lo do papel.'
   const text5 = 'Aqui finalmente veremos a ação: o site será de fato produzido pelos nosso programadores. É muito importante entendermos que o código será iniciado apenas após a sua aprovação do design, por isso, tenha certeza de que está satisfeito(a) com a etapa anterior, para que não aconteçam mudanças bruscas de layout após o início do passo 5.'
   const text6 = 'Acabamos! Agora você tem uma Landing Page novinha em folha para compartilhar e arrecadar clientes! Entregaremos para você seu site novinho e sob medida mediante pagamento acordado na etapa 2.'
+  
+  const sectionCarrossel = useRef(null)
+  
   function sumCount(){
     if(count != 6){
       setCount(count + 1);
@@ -51,75 +55,138 @@ function NossoTrabalho() {
           <section className={styles.processoWrapper}>
             <h1 className={styles.titleProcess}>Entenda o processo:</h1>
             <div className={styles.cardsDiv}>
-              {count == 1 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title1}</h1>
-                  <img src={img1}/>
+            <div className={styles.cardDestaqueDesktop}>
+                {count == 1 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title1}</h1>
+                    <img src={img1}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text1}
+                  </p>
+                </section>
+                }
+                {count == 2 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title2}</h1>
+                    <img src={img2}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text2}
+                  </p>
+                </section>
+                }
+                {count == 3 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title3}</h1>
+                    <img src={img3}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text3}
+                  </p>
+                </section>
+                }
+                {count == 4 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title4}</h1>
+                    <img src={img4}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text4}
+                  </p>
+                </section>
+                }
+                {count == 5 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title5}</h1>
+                    <img src={img5}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text5}
+                  </p>
+                </section>
+                }
+                {count == 6 &&
+                  <section className={styles.cardDestaque}>
+                  <div className={styles.titleCard}>
+                    <h1>{count}. {title6}</h1>
+                    <img src={img6}/>
+                  </div>
+                  <p className={styles.subtitleCard}>
+                    {text6}
+                  </p>
+                  <div className={styles.divButton}>
+                    <button className={styles.buttonBudget}>Faça um orçamento</button>
+                  </div>
+                </section>
+                }
+              </div>
+              <div className={styles.carrosselDiv} ref={sectionCarrossel}>
+                <div className={styles.cardDestaqueMobile}>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>1. {title1}</h1>
+                      <img src={img1}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text1}
+                    </p>
+                  </section>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>2. {title2}</h1>
+                      <img src={img2}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text2}
+                    </p>
+                  </section>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>3. {title3}</h1>
+                      <img src={img3}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text3}
+                    </p>
+                  </section>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>4. {title4}</h1>
+                      <img src={img4}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text4}
+                    </p>
+                  </section>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>5. {title5}</h1>
+                      <img src={img5}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text5}
+                    </p>
+                  </section>
+                    <section className={styles.cardDestaque}>
+                    <div className={styles.titleCard}>
+                      <h1>6. {title6}</h1>
+                      <img src={img6}/>
+                    </div>
+                    <p className={styles.subtitleCard}>
+                      {text6}
+                    </p>
+                    <div className={styles.divButton}>
+                      <button className={styles.buttonBudget}>Faça um orçamento</button>
+                    </div>
+                  </section>
                 </div>
-                <p className={styles.subtitleCard}>
-                  {text1}
-                </p>
-              </section>
-              }
-              {count == 2 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title2}</h1>
-                  <img src={img2}/>
-                </div>
-                <p className={styles.subtitleCard}>
-                  {text2}
-                </p>
-              </section>
-              }
-              {count == 3 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title3}</h1>
-                  <img src={img3}/>
-                </div>
-                <p className={styles.subtitleCard}>
-                  {text3}
-                </p>
-              </section>
-              }
-              {count == 4 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title4}</h1>
-                  <img src={img4}/>
-                </div>
-                <p className={styles.subtitleCard}>
-                  {text4}
-                </p>
-              </section>
-              }
-              {count == 5 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title5}</h1>
-                  <img src={img5}/>
-                </div>
-                <p className={styles.subtitleCard}>
-                  {text5}
-                </p>
-              </section>
-              }
-              {count == 6 &&
-                <section className={styles.cardDestaque}>
-                <div className={styles.titleCard}>
-                  <h1>{count}. {title6}</h1>
-                  <img src={img6}/>
-                </div>
-                <p className={styles.subtitleCard}>
-                  {text6}
-                </p>
-                <div className={styles.divButton}>
-                  <button className={styles.buttonBudget}>Faça um orçamento</button>
-                </div>
-              </section>
-              }
+              </div>
               <div className={styles.fundoEmb}>
                 <h1 className={styles.titleFundoEmb}>
                   6 - Lorem ipsum
@@ -134,7 +201,7 @@ function NossoTrabalho() {
                 </div>
             </div>
             <div className={styles.pagProcess}>
-              <img onClick={() => decCount()} src='../leftArrow.svg'/>
+              <img onClick={() => decCount()} id={styles.arrowDesktop} src='../leftArrow.svg'/>
               <h1>{count}</h1>
               {count == 1 && <div className={styles.circleSelected}/>}
               {count != 1 && <div onClick={() => setCount(1)} className={styles.circleSelect}/>}
@@ -148,7 +215,7 @@ function NossoTrabalho() {
               {count != 5 && <div onClick={() => setCount(5)} className={styles.circleSelect}/>}
               {count == 6 && <div className={styles.circleSelected}/>}
               {count != 6 && <div onClick={() => setCount(6)} className={styles.circleSelect}/>}
-              <img onClick={() => sumCount()} src='../rightArrow.svg'/>
+              <img onClick={() => sumCount()} id={styles.arrowDesktop} src='../rightArrow.svg'/>
             </div>
           </section>
         </div>

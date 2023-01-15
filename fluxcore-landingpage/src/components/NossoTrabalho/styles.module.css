@@ -61,6 +61,25 @@
     justify-content: center;
     padding-top: 4rem;
 }
+
+.cardDestaqueDesktop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 999;
+    width: 31.5rem;
+    height: 32.875rem;
+    padding: 1.5rem;
+    background: #FFFFFF;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.cardDestaqueMobile{
+    display: none;
+}
+
 .bgProcess{
     width: 100%;
     background: linear-gradient(116.82deg, #D9D9D9 22.4%, #FFFFFF 100%);
@@ -105,20 +124,6 @@
     font-size: 1.5rem;
     color: #000000;
     user-select: none;
-}
-
-.cardDestaque{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    z-index: 999;
-    width: 31.5rem;
-    height: 32.875rem;
-    padding: 1.5rem;
-    background: #FFFFFF;
-    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
 }
 
 .titleCard{
@@ -204,6 +209,9 @@
 .spanP {
     color: rgba(98, 24, 151, 1);
 }
+#arrowMobile{
+    display: none;
+}
 
 @media (max-width: 1400px){
     .fundoEmb{
@@ -212,10 +220,58 @@
     .fundoEmb p{
         font-size: 1.2rem;
     }
-    .cardDestaque{
+    .cardDestaqueDesktop{
         height: 25rem;
     }
     .pagProcess{
         padding-top: 3rem;
+    }
+  }
+  @media (max-width: 1024px){
+    #arrowMobile{
+        display: inherit;
+    }
+    #arrowDesktop{
+        display: none;
+    }
+    .cardsDiv{
+        padding-top: 1rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .cardDestaqueDesktop{
+        display: none;
+    }
+    .carrosselDiv{
+        margin: 0 auto;
+        overflow: scroll;
+    }
+    .pagProcess{
+        display: none;
+    }
+    .cardDestaqueMobile{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        width: 405%;
+        overflow: scroll !important; 
+        margin: 0 auto;
+        height: 30rem;
+    }
+    .cardDestaque{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        z-index: 999;
+        width: 31.5rem;
+        height: 25rem;
+        padding: 1.5rem;
+        background: #FFFFFF;
+        box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    .fundoEmb{
+        display: none;
     }
   }
