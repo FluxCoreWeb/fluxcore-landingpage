@@ -14,7 +14,7 @@ function App() {
         {modal && <Modal setModal={setModal}/>}
         <Header setModal={setModal}/>
         <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/' element={<Home setModal={setModal}/>}></Route>
           <Route exact path='/nosso-trabalho' element={<NossoTrabalho/>}></Route>
           <Route exact path='/sobre-nos' element={<SobreNos/>}></Route>
           <Route exact path='/quem-somos' element={<QuemSomos/>}></Route>

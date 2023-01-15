@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import Background from "../Background/index";
 import { useNavigate } from "react-router-dom";
-function Home() {
+function Home({setModal}) {
     const navigate = useNavigate()
     function sobreNos(){
         navigate(`/sobre-nos`)
@@ -16,7 +16,7 @@ function Home() {
                     com a FluxCore a partir da criação de uma Landing Page exclusivamente moldada para as suas 
                     necessidades.</p>
                     <div className={styles.buttonDiv}>
-                        <button className={styles.buttonBudget}>Faça um orçamento</button>
+                        <button onClick={() => setModal(true)} className={styles.buttonBudget}>Faça um orçamento</button>
                         <button onClick={sobreNos} className={styles.buttonKnow}>Saiba mais</button>
                     </div>
                 </article>
