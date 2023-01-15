@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     height: 45.563rem;
+    gap: 1.5rem;
 }
 .bgNossoTrabalho{
     display: flex;
@@ -27,6 +28,7 @@
 .imgNossoTrabalho{
     width: 100%;
     height: 45.563rem;
+    object-fit: cover;
 }
 .title{
     font-family: 'Poppins', sans-serif;
@@ -227,7 +229,16 @@
         padding-top: 3rem;
     }
   }
-  @media (max-width: 1024px){
+@media (max-width: 1024px){
+    .subtitle{
+        font-size: 2.5rem;
+    }
+    .titleProcess{
+        font-size: 3rem;
+    }
+    .textInfo{
+        font-size: 1.2rem;
+    }
     #arrowMobile{
         display: inherit;
     }
@@ -235,37 +246,40 @@
         display: none;
     }
     .cardsDiv{
-        padding-top: 1rem;
         width: 100%;
-        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .cardDestaqueDesktop{
         display: none;
     }
     .carrosselDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
-        overflow: scroll;
+        width: 100%;
     }
     .pagProcess{
         display: none;
     }
     .cardDestaqueMobile{
+        width: 90%;
         display: flex;
         justify-content: center;
-        gap: 3rem;
         align-items: center;
-        width: 405%;
-        overflow: scroll !important; 
+        gap: 3rem;
         margin: 0 auto;
         height: 30rem;
     }
     .cardDestaque{
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 1rem;
+        width: 55%;
         z-index: 999;
-        width: 31.5rem;
-        height: 25rem;
+        height: 30rem;
         padding: 1.5rem;
         background: #FFFFFF;
         box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
@@ -273,5 +287,78 @@
     }
     .fundoEmb{
         display: none;
+    }
+  }
+
+  @media (max-width: 768px){
+    .landingPageInfo{
+        gap: .5rem;
+        padding-top: .5rem;
+    }
+    .subtitle{
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .textInfo{
+        font-size: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .titleProcess{
+        font-size: 2rem;
+    }
+    .cardDestaqueMobile{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin: 0 auto;
+        height: 30rem;
+    }
+    .titleCard h1{
+        font-size: 1.5rem;
+    }
+    .subtitleCard{
+        font-size: .9rem;
+    }
+    .cardDestaque{
+        display: flex;
+        flex-direction: column;
+        font-size: .5rem;
+        gap: 1rem;
+        width: 60%;
+        z-index: 999;
+        height: 25rem;
+        padding: 1.5rem;
+        background: #FFFFFF;
+        box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+  }
+  @media (max-width: 540px){
+    .cardDestaqueMobile{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 30rem;
+    }
+    .cardDestaque{
+        gap: 1rem;
+        width: 70%;
+        height: 25rem;
+    }
+    .titleCard h1{
+        font-size: 1rem;
+    }
+    .titleCard img{
+        width: 1.5rem;
+    }
+    .subtitleCard{
+        font-size: .8rem;
     }
   }
