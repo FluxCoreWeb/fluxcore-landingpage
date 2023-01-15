@@ -8,21 +8,28 @@
 }
 
 .wrapperSobre{
-    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .sobreSection{
     display: flex;
-    align-items: flex-start;
-    width: 85%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
     margin: 0 auto;
     flex-direction: column;
     gap: 2rem;
 }
 .titleDiv{
-    width: 75%;
+    width: 90%;
     display: flex;
     align-items: center;
     gap: 3rem;
+    margin: 0 auto;
+    justify-content: center;
 }
 .titleDiv h1{
     font-family: 'Poppins', sans-serif;
@@ -32,13 +39,18 @@
     color: #621897;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.titleDiv img{
+    width: 12rem;
+}
 .subtitle{
-    width: 90%;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
     color: #000000;
+    text-align: justify;
 }
 .hatIconDiv{
     display: flex;
@@ -46,10 +58,79 @@
     margin: 0 auto;
     padding-top: 1rem;
 }
+.titlePreto{
+   color: #000000;
+}
+.buttonContact{
+    background-color: #621897;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    height: 58px;
+    width: 263px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.buttonContact:hover{
+    background: #38085a;
+    cursor: pointer;
+}
+
+.contactWrapper{
+    padding-top: 2rem;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.instaDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    color: #000000;
+    gap: 1rem;
+}
+
+.instaDiv a{
+    text-decoration: none;
+}
+
+.instaDiv h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.instaIntern{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000000;
+}
 
 @media (max-width: 1400px){
+    .sobreWrapper{
+        height: 130vh;
+    }
     .titleDiv h1{
         font-size: 2.8rem;
+    }
+    .subtitle{
+        font-size: 1rem;
     }
     .titleDiv img{
         width: 9rem;

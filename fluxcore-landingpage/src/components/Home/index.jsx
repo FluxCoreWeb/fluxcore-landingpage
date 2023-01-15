@@ -1,17 +1,23 @@
 import styles from './styles.module.css'
 import Background from "../Background/index";
+import { useNavigate } from "react-router-dom";
 function Home() {
+    const navigate = useNavigate()
+    function sobreNos(){
+        navigate(`/sobre-nos`)
+    }
   return (
     <>
         <main className={styles.homeWrapper}>
             <section className={styles.infoWrapper}>
                 <article className={styles.divLeft}>
                     <h1 className={styles.title}>Converta visitas em clientes com uma Landing Page</h1>
-                    <p className={styles.subtitle}>Lorem ipsum dolor sit amet consectetur. Ipsum dui dolor nunc ultrices augue lacus nascetur id molestie. 
-                    Varius egestas amet cursus volutpat sollicitudin. Faucibus pretium pellentesque dui natoque quis libero.</p>
+                    <p className={styles.subtitle}>Expanda sua clientela de maneira rápida, fácil e acessível 
+                    com a FluxCore a partir da criação de uma Landing Page exclusivamente moldada para as suas 
+                    necessidades.</p>
                     <div className={styles.buttonDiv}>
                         <button className={styles.buttonBudget}>Faça um orçamento</button>
-                        <a href='/sobre-nos'><button className={styles.buttonKnow}>Saiba mais</button></a>
+                        <button onClick={sobreNos} className={styles.buttonKnow}>Saiba mais</button>
                     </div>
                 </article>
                 <article className={styles.benefitsDiv}>

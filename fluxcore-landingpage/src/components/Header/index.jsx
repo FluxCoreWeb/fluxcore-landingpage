@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 function Header() {
   const url = window.location.pathname
-  console.log(url)
   const navigate = useNavigate()
   function nossoTrabalho(){
     navigate(`/nosso-trabalho`)
