@@ -1,10 +1,12 @@
 .homeWrapper{
     display: flex;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
     width: 100%;
     position: absolute;
     z-index: 2;
+    overflow: scroll !important;
+    padding-top: 10rem;
 }
 .infoWrapper{
     display: flex;
@@ -37,6 +39,13 @@
 }
 .buttonDiv{
     display: flex;
+    gap: 1.5rem;
+}
+.buttonDivMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
     gap: 1.5rem;
 }
 .buttonBudget{
@@ -108,6 +117,9 @@
 .subtitleBenefits{
     width: 90%;
 }
+#buttonMobile{
+    display: none;
+}
 
 @media (max-width: 1400px){
     .title{
@@ -125,5 +137,77 @@
     }
     .benefitsInfoSquare img{
         width: 3.5rem;
+    }
+  }
+  @media (max-width: 1024px){
+    .homeWrapper{
+        padding-top: 5rem;
+    }
+    .infoWrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .divLeft{
+        gap: .5rem;
+        width: 80%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.2rem
+    }
+    .benefitsInfoSquare{
+        font-size: .8rem;
+        width: 47%;
+    }
+    .benefitsInfoSquare img{
+        width: 2.8rem;
+    }
+    .benefitsDiv{
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 80%;
+    }
+    #buttonDesktop{
+        display: none;
+    }
+    #buttonMobile{
+        display: inherit;
+    }
+  }
+  @media (max-width: 768px){
+    .infoWrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .divLeft{
+        gap: .5rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .subtitle {
+        font-size: .988rem
+    }
+    .benefitsInfoSquare{
+        font-size: .688rem;
+        width: 35%;
+    }
+    .benefitsInfoSquare img{
+        width: 2.4rem;
+    }
+    .benefitsDiv{
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 80%;
+    }
+    #buttonDesktop{
+        display: none;
+    }
+    #buttonMobile{
+        display: inherit;
     }
   }

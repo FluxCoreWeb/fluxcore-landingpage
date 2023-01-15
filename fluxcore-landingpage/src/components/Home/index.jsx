@@ -15,7 +15,7 @@ function Home({setModal}) {
                     <p className={styles.subtitle}>Expanda sua clientela de maneira rápida, fácil e acessível 
                     com a FluxCore a partir da criação de uma Landing Page exclusivamente moldada para as suas 
                     necessidades.</p>
-                    <div className={styles.buttonDiv}>
+                    <div className={styles.buttonDiv} id={styles.buttonDesktop}>
                         <button onClick={() => setModal(true)} className={styles.buttonBudget}>Faça um orçamento</button>
                         <button onClick={sobreNos} className={styles.buttonKnow}>Saiba mais</button>
                     </div>
@@ -41,6 +41,10 @@ function Home({setModal}) {
                         <p className={styles.subtitleBenefits}>Projetos profissionais por um preço mega acessível </p>
                     </div>
                 </article>
+                <div className={styles.buttonDivMobile} id={styles.buttonMobile}>
+                    <button onClick={() => setModal(true)} className={styles.buttonBudget}>Faça um orçamento</button>
+                    <button onClick={sobreNos} className={styles.buttonKnow}>Saiba mais</button>
+                </div>
             </section>
         </main>
         <Background/>

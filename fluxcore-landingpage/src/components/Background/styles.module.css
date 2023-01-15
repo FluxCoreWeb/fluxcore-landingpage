@@ -1,6 +1,12 @@
-.bgWrapper{
+html{
     background-color: #e7e5e5;
+}
+
+.bgWrapper{
+    position: absolute;
+    padding-top: 5rem;
     width: 100%;
+    overflow-x: hidden;
     height: 100vh;
 }
 
@@ -27,3 +33,53 @@
     right: 25%;
     opacity: .8;
 }
+
+
+@media (max-width: 1024px){
+    .bgLine1{
+        width: 400px;
+        left: -200px;
+        top: 200px;
+        opacity: 1;
+        transform: rotate(-44.25deg);
+    }
+    
+    .bgLine2{
+        width: 400px;
+        opacity: 1;
+        transform: rotate(21.93deg);
+        right: -70px;
+        top: 20px;
+    }
+    .bgLine3{
+        position: absolute;
+        width: 600px;
+        transform: rotate(-105deg);
+        right: -250px;
+        bottom: 30px;
+    }
+  }
+  @media (max-width: 768px){
+    .bgLine1{
+        width: 278.09px;
+        left: -140px;
+        top: 250px;
+        opacity: 1;
+        transform: rotate(-44.25deg);
+    }
+    
+    .bgLine2{
+        width: 280px;
+        transform: rotate(21.93deg);
+        right: -45px;
+        top: 20px;
+        opacity: 1;
+    }
+    .bgLine3{
+        position: absolute;
+        width: 330px;
+        transform: rotate(-86.94deg);
+        right: -90px;
+        bottom: 30px;
+    }
+  }

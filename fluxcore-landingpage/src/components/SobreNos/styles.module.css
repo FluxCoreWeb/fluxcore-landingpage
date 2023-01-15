@@ -124,7 +124,7 @@
 
 @media (max-width: 1400px){
     .sobreWrapper{
-        height: 130vh;
+        height: 100vh;
     }
     .titleDiv h1{
         font-size: 2.8rem;
@@ -134,5 +134,27 @@
     }
     .titleDiv img{
         width: 9rem;
+    }
+  }
+  @media (max-width: 768px){
+    .sobreWrapper{
+        height: 100vh;
+    }
+    .titleDiv h1{
+        font-size: 1.8rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .titleDiv img{
+        width: 6rem;
+    }
+    .instaDiv h1{
+        font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 550px){
+    .sobreWrapper{
+        height: 125vh;
     }
   }
