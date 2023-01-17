@@ -23,15 +23,7 @@ function NossoTrabalho() {
   const text4 = 'Na quarta etapa a mágica começa: seu projeto vai sair do papel, Aqui, faremos um design especial pra você, de acordo cmo o que foi conversado durante o primeiro contato e a etapa anterior. Para garantir que a sua Landing Page será perfeita para você, estaremos sempre te atualizando e compartilhando cada decisão, sinta-se a vontade para fazer perguntas e colocações, afinal, o projeto é seu, nós apenas ajudaremos a tirá-lo do papel.'
   const text5 = 'Aqui finalmente veremos a ação: o site será de fato produzido pelos nosso programadores. É muito importante entendermos que o código será iniciado apenas após a sua aprovação do design, por isso, tenha certeza de que está satisfeito(a) com a etapa anterior, para que não aconteçam mudanças bruscas de layout após o início do passo 5.'
   const text6 = 'Acabamos! Agora você tem uma Landing Page novinha em folha para compartilhar e arrecadar clientes! Entregaremos para você seu site novinho e sob medida mediante pagamento acordado na etapa 2.'
-  
-  const item = [
-    { id: 1, titulo: title1, img: img1, subtitulo: text1 },
-    { id: 2, titulo: title2, img: img2, subtitulo: text2 },
-    { id: 3, titulo: title3, img: img3, subtitulo: text3 },
-    { id: 4, titulo: title4, img: img4, subtitulo: text4 },
-    { id: 5, titulo: title5, img: img5, subtitulo: text5 },
-    { id: 6, titulo: title6, img: img6, subtitulo: text6 },
-  ]
+
   const [items, setItems] = useState([
     { id: 1, titulo: title1, img: img1, subtitulo: text1 },
     { id: 2, titulo: title2, img: img2, subtitulo: text2 },

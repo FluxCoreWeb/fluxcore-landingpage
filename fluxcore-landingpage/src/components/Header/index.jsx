@@ -10,28 +10,24 @@ function Header({setModal}) {
       setMenu(false)
     }
     navigate(`/nosso-trabalho`)
-    setState(1)
   }
   function home(){
     if(menu){
       setMenu(false)
     }
     navigate(`/`)
-    setState(0)
   }
   function sobreNos(){
     if(menu){
       setMenu(false)
     }
     navigate(`/sobre-nos`)
-    setState(2)
   }
   function quemSomos(){
     if(menu){
       setMenu(false)
     }
     navigate(`/quem-somos`)
-    setState(3)
   }
   function setModalMobile(){
     setModal(true)

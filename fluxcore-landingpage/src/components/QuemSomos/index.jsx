@@ -1,5 +1,31 @@
 import styles from './styles.module.css'
+import { useState } from 'react';
+import Carousel from 'react-elastic-carousel';
+import CardQuemSomos from './CardQuemSomos';
 function QuemSomos() {
+    const nome1 = "Luísa Coelho"
+    const imagem1 = '../luisa.jpg'
+    const cargo1 = "CMO, Co-Founder & Designer"
+    const texto1 = "Lorem ipsum dolor sit amet consectetur. Adipiscing justo ipsum in convallis ornare. Commodo non a tortor amet. Dolor nisl molestie est dui mauris praesent. Volutpat mattis dignissim quis molestie faucibus et. Nullam urna neque quisque ut at consequat. Nunc varius felis semper dui suspendisse id sed. Porttitor cursus egestas eget quis. Magna orci auctor amet vestibulum tortor. Felis."
+    const imgCargo1 = '../designIcon.svg'
+    const rede1img1 = '../linkedinIcon.svg'
+    const rede1link1 = 'https://www.linkedin.com/in/luísa-coelho-167194237/'
+    const rede2img1 = '../beIcon.svg'
+    const rede2link1 = ''
+    const nome2 = 'Artur Mota'
+    const imagem2 = '../artur.jpg'
+    const cargo2 = 'CTO, Co-Founder & Developer'
+    //const texto2 =
+    const imgCargo2 = '../codIcon.svg'
+    const rede1img2 = '../linkedinIcon.svg'
+    const rede1link2 = 'https://www.linkedin.com/in/artur-mota-913b9a235/'
+    const rede2img2 = '../gitIcon.svg'
+    const rede2link2 = 'https://github.com/ArturMota19'
+
+    const [items, setItems] = useState([
+        { nome: nome1, imagem: imagem1, cargo: cargo1, texto: texto1,imgCargo: imgCargo1, rede1img: rede1img1, rede1link: rede1link1,rede2img: rede2img1,rede2link: rede2link1},
+        { nome: nome2, imagem: imagem2, cargo: cargo2, texto: texto1,imgCargo: imgCargo2, rede1img: rede1img2, rede1link: rede1link2,rede2img: rede2img2,rede2link: rede2link2},
+    ]);
   return (
     <main className={styles.quemSomosWrapper}>
         <section className={styles.sectionQuemSomos}>
@@ -22,13 +48,18 @@ function QuemSomos() {
                             Magna orci auctor amet vestibulum tortor. Felis.</p>
                         <img src='../designIcon.svg'/>
                         <section className={styles.redesDiv}>
-                            <a href='https://www.linkedin.com/in/luísa-coelho-167194237/' target="_blank">
-                                <div className={styles.buttonRedes}>
-                                    <img src='../linkedinIcon.svg'/>
-                                </div>
-                            </a>
-                            <div className={styles.buttonRedes}>
-                                <img src='../beIcon.svg'/>
+                            <h1>Veja mais do meu trabalho:</h1>
+                            <div className={styles.apenasRedes}>
+                                <a href='https://www.linkedin.com/in/luísa-coelho-167194237/' target="_blank">
+                                    <div className={styles.buttonRedes}>
+                                        <img src='../linkedinIcon.svg'/>
+                                    </div>
+                                </a>
+                                <a href='' target='_blank'>
+                                    <div className={styles.buttonRedes}>
+                                        <img src='../beIcon.svg'/>
+                                    </div>
+                                </a>
                             </div>
                         </section>
                     </div>
@@ -47,19 +78,32 @@ function QuemSomos() {
                             Magna orci auctor amet vestibulum tortor. Felis.</p>
                         <img src='../codIcon.svg'/>
                         <section className={styles.redesDiv}>
-                            <a href='https://www.linkedin.com/in/artur-mota-913b9a235/' target="_blank">
-                            <div className={styles.buttonRedes}>
-                                <img src='../linkedinIcon.svg'/>
+                            <h1>Veja mais do meu trabalho:</h1>
+                            <div className={styles.apenasRedes}>
+                                <a href='https://www.linkedin.com/in/artur-mota-913b9a235/' target="_blank">
+                                    <div className={styles.buttonRedes}>
+                                        <img src='../linkedinIcon.svg'/>
+                                    </div>
+                                </a>
+                                <a href='https://github.com/ArturMota19' target='_blank'>
+                                    <div className={styles.buttonRedes}>
+                                        <img src='../gitIcon.svg'/>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
-                            <a href='https://github.com/ArturMota19' target="_blank">
-                                <div className={styles.buttonRedes}>
-                                <img src='../gitIcon.svg'/>
-                            </div>
-                            </a>
                         </section>
                     </div>
                 </div>
+            </section>
+            <section className={styles.equipeSectionMobile}> 
+                <Carousel>
+                    {items.map((item) => (
+                        <CardQuemSomos key={item.id} nome={item.nome} imagem={item.imagem} 
+                        cargo={item.cargo} texto={item.texto} imgCargo={item.imgCargo} 
+                        rede1img={item.rede1img} rede1link={item.rede1link} rede2img={item.rede2img} 
+                        rede2link={item.rede2link}></CardQuemSomos>
+                    ))}
+                </Carousel>
             </section>
         </section>
     </main>

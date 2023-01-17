@@ -98,7 +98,19 @@
 
 .redesDiv{
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+}
+.apenasRedes{
+    display: flex;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
 }
@@ -129,6 +141,9 @@
     border-radius: 100px;
     object-fit: cover;
 }
+.equipeSectionMobile{
+    display: none;
+}
 
 @media (max-width: 1400px){
     .cargoTitle{
@@ -151,9 +166,69 @@
     }
     .equipeIndividualDiv{
         gap: 1.5rem;
-        height: 27rem;
+        width: 20rem;
+        height: 35rem;
     }
     .cargoText{
         font-size: .9rem;
+    }
+  }
+  @media (max-width: 1024px){
+    .equipeSection{
+        display: none;
+    }
+    .equipeSectionMobile{
+        display: inherit;
+        width: 95%;
+    }
+  }
+  @media (max-width: 768px){
+    .sectionQuemSomos {
+        width: 95%;
+    }
+    .redesDiv{
+        font-size: .9rem;
+    }
+    .imgIcon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+    .equipeIndividualDiv{
+        width: 225px;
+        gap: .8rem;
+        height: 450px;
+    }
+    .buttonRedes{
+        width: 3rem;
+        height: 2.8rem;
+    }
+    .buttonRedes img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .imgCargo{
+        width: 1.5rem;
+    }
+    .equipeSectionMobile{
+        display: inherit;
+        width: 100%;
+    }
+    .cargoTitle{
+        font-size: 1rem;
+    }
+    .cargoSubtitle{
+        font-size: .7rem;
+    }
+    .titleDiv h1{
+        font-size: 1.5rem;
+    }
+    .titleDiv h3{
+        font-size: 1rem;
+    }
+    .cargoText{
+        font-size: .7rem;
+        width: 70%;
     }
   }

@@ -1,10 +1,10 @@
 .sobreWrapper{
-    height: 100vh;
     background: linear-gradient(116.82deg, #D9D9D9 22.4%, #FFFFFF 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 .wrapperSobre{
@@ -139,9 +139,6 @@
     }
   }
   @media (max-width: 768px){
-    .sobreWrapper{
-        height: 110vh;
-    }
     .titleDiv h1{
         font-size: 1.8rem;
     }
@@ -153,10 +150,5 @@
     }
     .instaDiv h1{
         font-size: 1.5rem;
-    }
-  }
-  @media (max-width: 550px){
-    .sobreWrapper{
-        height: 110vh;
     }
   }
