@@ -12,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 10rem;
 }
 
 .sobreSection{
@@ -123,9 +125,6 @@
 }
 
 @media (max-width: 1400px){
-    .sobreWrapper{
-        height: 100vh;
-    }
     .titleDiv h1{
         font-size: 2.8rem;
     }
@@ -135,10 +134,13 @@
     .titleDiv img{
         width: 9rem;
     }
+    .wrapperSobre{
+        top: 7rem;
+    }
   }
   @media (max-width: 768px){
     .sobreWrapper{
-        height: 100vh;
+        height: 110vh;
     }
     .titleDiv h1{
         font-size: 1.8rem;
@@ -155,6 +157,6 @@
   }
   @media (max-width: 550px){
     .sobreWrapper{
-        height: 125vh;
+        height: 110vh;
     }
   }

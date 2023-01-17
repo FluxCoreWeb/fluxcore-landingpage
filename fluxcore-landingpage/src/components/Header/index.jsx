@@ -4,21 +4,38 @@ import { useState } from 'react';
 function Header({setModal}) {
   const url = window.location.pathname
   const navigate = useNavigate()
+  const [menu, setMenu] = useState(false)
   function nossoTrabalho(){
+    if(menu){
+      setMenu(false)
+    }
     navigate(`/nosso-trabalho`)
     setState(1)
   }
   function home(){
+    if(menu){
+      setMenu(false)
+    }
     navigate(`/`)
     setState(0)
   }
   function sobreNos(){
+    if(menu){
+      setMenu(false)
+    }
     navigate(`/sobre-nos`)
     setState(2)
   }
   function quemSomos(){
+    if(menu){
+      setMenu(false)
+    }
     navigate(`/quem-somos`)
     setState(3)
+  }
+  function setModalMobile(){
+    setModal(true)
+    setMenu(false)
   }
   return (
     <header className={styles.headerWrapper}>
@@ -26,6 +43,9 @@ function Header({setModal}) {
         <div onClick={home} className={styles.logoDiv}>
           <img src='../iconLogo.svg'/>
           <h1>FLUXCORE</h1>
+        </div>
+        <div className={styles.menuMobile}>
+          <img onClick={() => setMenu(true)} src='../menuOpen.svg'/>
         </div>
         <section className={styles.navbarHeaderWrapper}>
           <div className={styles.textNavbar}>
@@ -57,6 +77,20 @@ function Header({setModal}) {
           </div>
         </section>
       </section>
+      {menu &&
+          <section className={styles.menuHamb}>
+            <div className={styles.menuIconHamb}>
+              <img onClick={() => setMenu(false)} src='../menuClose.svg'/>
+            </div>
+            <div className={styles.headerMenuHamb}>
+              {url == '/' ? <h1 onClick={home} className={styles.roxoSel}>Página Principal</h1> : <h1 onClick={home}>Página Principal</h1>}
+              {url == '/nosso-trabalho' ? <h1 className={styles.roxoSel} onClick={nossoTrabalho}>Nosso Trabalho</h1> : <h1 onClick={nossoTrabalho}>Nosso Trabalho</h1>}
+              {url == '/sobre-nos' ? <h1 className={styles.roxoSel} onClick={sobreNos}>Sobre Nós</h1> : <h1 onClick={sobreNos}>Sobre Nós</h1>}
+              {url == '/quem-somos' ? <h1 className={styles.roxoSel} onClick={quemSomos}>Quem Somos</h1> : <h1 onClick={quemSomos}>Quem Somos</h1>}
+              <button onClick={setModalMobile} className={styles.buttonBudget}>Faça um orçamento</button>
+            </div>
+          </section>
+        }
     </header>
   )
 }

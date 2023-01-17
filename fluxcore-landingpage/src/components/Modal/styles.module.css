@@ -66,3 +66,14 @@
 .buttonModal:hover{
     background: #38085a;
 }
+
+@media (max-width: 1024px){
+    .titleModal{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .modalIc{
+        width: 350px;
+        height: 250px;
+    }
+  }
