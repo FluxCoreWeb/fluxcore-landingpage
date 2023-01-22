@@ -49,6 +49,9 @@ function Header({setModal}) {
             {url == '#/' &&
             <div className={styles.lineBorda}/>
             }
+            {url == '' &&
+            <div className={styles.lineBorda}/>
+            }
           </div>
           <div className={styles.textNavbar}>
             <h2 className={styles.textNavbar} onClick={nossoTrabalho}>NOSSO TRABALHO</h2>
