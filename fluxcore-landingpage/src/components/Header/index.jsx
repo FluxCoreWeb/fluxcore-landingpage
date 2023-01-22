@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 function Header({setModal}) {
-  const url = window.location.pathname
+  const url = window.location.hash
   const navigate = useNavigate()
   const [menu, setMenu] = useState(false)
   function nossoTrabalho(){
@@ -46,25 +46,25 @@ function Header({setModal}) {
         <section className={styles.navbarHeaderWrapper}>
           <div className={styles.textNavbar}>
             <img onClick={home} src='../homeIcon.svg'/>
-            {url == '/' &&
+            {url == '#/' &&
             <div className={styles.lineBorda}/>
             }
           </div>
           <div className={styles.textNavbar}>
             <h2 className={styles.textNavbar} onClick={nossoTrabalho}>NOSSO TRABALHO</h2>
-            {url == '/nosso-trabalho' &&
+            {url == '#/nosso-trabalho' &&
             <div className={styles.lineBorda}/>
             }
           </div>
           <div className={styles.textNavbar}>
             <h2 className={styles.textNavbar} onClick={sobreNos}>SOBRE NÓS</h2>
-            {url == '/sobre-nos' &&
+            {url == '#/sobre-nos' &&
             <div className={styles.lineBorda}/>
             }
           </div>
           <div className={styles.textNavbar}>
             <h2 className={styles.textNavbar} onClick={quemSomos}>QUEM SOMOS</h2>
-            {url == '/quem-somos' &&
+            {url == '#/quem-somos' &&
             <div className={styles.lineBorda}/>
             }
           </div>
@@ -79,10 +79,10 @@ function Header({setModal}) {
               <img onClick={() => setMenu(false)} src='../menuClose.svg'/>
             </div>
             <div className={styles.headerMenuHamb}>
-              {url == '/' ? <h1 onClick={home} className={styles.roxoSel}>Página Principal</h1> : <h1 onClick={home}>Página Principal</h1>}
-              {url == '/nosso-trabalho' ? <h1 className={styles.roxoSel} onClick={nossoTrabalho}>Nosso Trabalho</h1> : <h1 onClick={nossoTrabalho}>Nosso Trabalho</h1>}
-              {url == '/sobre-nos' ? <h1 className={styles.roxoSel} onClick={sobreNos}>Sobre Nós</h1> : <h1 onClick={sobreNos}>Sobre Nós</h1>}
-              {url == '/quem-somos' ? <h1 className={styles.roxoSel} onClick={quemSomos}>Quem Somos</h1> : <h1 onClick={quemSomos}>Quem Somos</h1>}
+              {url == '#/' ? <h1 onClick={home} className={styles.roxoSel}>Página Principal</h1> : <h1 onClick={home}>Página Principal</h1>}
+              {url == '#/nosso-trabalho' ? <h1 className={styles.roxoSel} onClick={nossoTrabalho}>Nosso Trabalho</h1> : <h1 onClick={nossoTrabalho}>Nosso Trabalho</h1>}
+              {url == '#/sobre-nos' ? <h1 className={styles.roxoSel} onClick={sobreNos}>Sobre Nós</h1> : <h1 onClick={sobreNos}>Sobre Nós</h1>}
+              {url == '#/quem-somos' ? <h1 className={styles.roxoSel} onClick={quemSomos}>Quem Somos</h1> : <h1 onClick={quemSomos}>Quem Somos</h1>}
               <button onClick={setModalMobile} className={styles.buttonBudget}>Faça um orçamento</button>
             </div>
           </section>

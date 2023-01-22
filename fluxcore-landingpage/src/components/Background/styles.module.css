@@ -40,20 +40,20 @@ html{
         width: 400px;
         left: -200px;
         top: 200px;
-        opacity: 1;
+        opacity: .6;
         transform: rotate(-44.25deg);
     }
     
     .bgLine2{
         width: 400px;
-        opacity: 1;
+        opacity: .6;
         transform: rotate(21.93deg);
         right: -70px;
         top: 20px;
     }
     .bgLine3{
         position: absolute;
-        width: 600px;
+        width: 550px;
         transform: rotate(-105deg);
         right: -250px;
         bottom: 30px;
@@ -64,7 +64,7 @@ html{
         width: 278.09px;
         left: -140px;
         top: 250px;
-        opacity: 1;
+        opacity: .6;
         transform: rotate(-44.25deg);
     }
     
@@ -73,13 +73,13 @@ html{
         transform: rotate(21.93deg);
         right: -45px;
         top: 20px;
-        opacity: 1;
+        opacity: .6;
     }
     .bgLine3{
         position: absolute;
         width: 330px;
-        transform: rotate(-86.94deg);
-        right: -90px;
-        bottom: 30px;
+        transform: rotate(-95deg);
+        right: -120px;
+        bottom: 40px;
     }
   }

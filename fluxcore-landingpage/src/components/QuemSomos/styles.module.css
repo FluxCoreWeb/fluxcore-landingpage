@@ -55,7 +55,7 @@
 .equipeIndividualDiv{
     width: 23rem;
     padding: 1.5rem;
-    height: 34rem;
+    height: 37rem;
     background: #D9D9D9;
     border-radius: 10px;
     display: flex;
@@ -92,8 +92,12 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1.1rem;
+    width: 95%;
+    word-break:initial;
+    text-align: center;
+    text-justify: distribute;
+    height: 18rem;
 }
 
 .redesDiv{
@@ -166,8 +170,8 @@
     }
     .equipeIndividualDiv{
         gap: 1.5rem;
-        width: 20rem;
-        height: 35rem;
+        width: 18rem;
+        height: 32rem;
     }
     .cargoText{
         font-size: .9rem;
@@ -229,6 +233,9 @@
     }
     .cargoText{
         font-size: .7rem;
-        width: 70%;
+        width: 85%;
+        word-break:initial;
+        text-align: center;
+        text-justify: distribute;
     }
   }

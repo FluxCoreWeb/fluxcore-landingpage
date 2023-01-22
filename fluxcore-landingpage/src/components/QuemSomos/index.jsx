@@ -6,7 +6,7 @@ function QuemSomos() {
     const nome1 = "Luísa Coelho"
     const imagem1 = '../luisa.jpg'
     const cargo1 = "CMO, Co-Founder & Designer"
-    const texto1 = "Lorem ipsum dolor sit amet consectetur. Adipiscing justo ipsum in convallis ornare. Commodo non a tortor amet. Dolor nisl molestie est dui mauris praesent. Volutpat mattis dignissim quis molestie faucibus et. Nullam urna neque quisque ut at consequat. Nunc varius felis semper dui suspendisse id sed. Porttitor cursus egestas eget quis. Magna orci auctor amet vestibulum tortor. Felis."
+    const texto1 = "Graduanda em Ciência da Computação pela UFBA, buscando ampliar meus horizontes e adentrar o mercado de trabalho. Almejo mostrar minhas habilidades a partir da criação de designes com muita personalidade, que transmitam os sentimentos certos para cada tipo de situação e tornem a experiência de todos o mais prazerosa e intuitiva possível."
     const imgCargo1 = '../designIcon.svg'
     const rede1img1 = '../linkedinIcon.svg'
     const rede1link1 = 'https://www.linkedin.com/in/luísa-coelho-167194237/'
@@ -15,6 +15,7 @@ function QuemSomos() {
     const nome2 = 'Artur Mota'
     const imagem2 = '../artur.jpg'
     const cargo2 = 'CTO, Co-Founder & Developer'
+    const texto2 = 'Graduando em Ciência da Computação pela UFBA e apaixonado pelas tecnologias e suas vertentes, em especial à área de Desenvolvimento Web. Atualmente, atuo como Coordenador de projetos e Desenvolvedor Front-End, utilizando React JS, Next Js, HTML, CSS e Javascript para codar meus projetos.'
     //const texto2 =
     const imgCargo2 = '../codIcon.svg'
     const rede1img2 = '../linkedinIcon.svg'
@@ -24,7 +25,7 @@ function QuemSomos() {
 
     const [items, setItems] = useState([
         { nome: nome1, imagem: imagem1, cargo: cargo1, texto: texto1,imgCargo: imgCargo1, rede1img: rede1img1, rede1link: rede1link1,rede2img: rede2img1,rede2link: rede2link1},
-        { nome: nome2, imagem: imagem2, cargo: cargo2, texto: texto1,imgCargo: imgCargo2, rede1img: rede1img2, rede1link: rede1link2,rede2img: rede2img2,rede2link: rede2link2},
+        { nome: nome2, imagem: imagem2, cargo: cargo2, texto: texto2,imgCargo: imgCargo2, rede1img: rede1img2, rede1link: rede1link2,rede2img: rede2img2,rede2link: rede2link2},
     ]);
   return (
     <main className={styles.quemSomosWrapper}>
@@ -41,11 +42,7 @@ function QuemSomos() {
                             <h1 className={styles.cargoTitle}>Luísa Coelho</h1>
                             <h3 className={styles.cargoSubtitle}>CMO, Co-Founder & Designer</h3>
                         </div>
-                        <p className={styles.cargoText}>Lorem ipsum dolor sit amet consectetur. Adipiscing justo ipsum in convallis ornare. 
-                            Commodo non a tortor amet. Dolor nisl molestie est dui mauris praesent. Volutpat 
-                            mattis dignissim quis molestie faucibus et. Nullam urna neque quisque ut at consequat. 
-                            Nunc varius felis semper dui suspendisse id sed. Porttitor cursus egestas eget quis. 
-                            Magna orci auctor amet vestibulum tortor. Felis.</p>
+                        <p className={styles.cargoText}>Graduanda em Ciência da Computação pela UFBA, buscando ampliar meus horizontes e adentrar o mercado de trabalho. Almejo mostrar minhas habilidades a partir da criação de designes com muita personalidade, que transmitam os sentimentos certos para cada tipo de situação e tornem a experiência de todos o mais prazerosa e intuitiva possível.</p>
                         <img src='../designIcon.svg'/>
                         <section className={styles.redesDiv}>
                             <h1>Veja mais do meu trabalho:</h1>
@@ -71,11 +68,7 @@ function QuemSomos() {
                             <h1 className={styles.cargoTitle}>Artur Mota</h1>
                             <h3 className={styles.cargoSubtitle}>CTO, Co-Founder & Developer</h3>
                         </div>
-                        <p className={styles.cargoText}>Lorem ipsum dolor sit amet consectetur. Adipiscing justo ipsum in convallis ornare. 
-                            Commodo non a tortor amet. Dolor nisl molestie est dui mauris praesent. Volutpat 
-                            mattis dignissim quis molestie faucibus et. Nullam urna neque quisque ut at consequat. 
-                            Nunc varius felis semper dui suspendisse id sed. Porttitor cursus egestas eget quis. 
-                            Magna orci auctor amet vestibulum tortor. Felis.</p>
+                        <p className={styles.cargoText}>Graduando em Ciência da Computação pela UFBA e apaixonado pelas tecnologias e suas vertentes, em especial à área de Desenvolvimento Web. Atualmente, atuo como Coordenador de projetos e Desenvolvedor Front-End, utilizando React JS, Next Js, HTML, CSS e Javascript para codar meus projetos.</p>
                         <img src='../codIcon.svg'/>
                         <section className={styles.redesDiv}>
                             <h1>Veja mais do meu trabalho:</h1>

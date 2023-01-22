@@ -3,6 +3,9 @@
 	padding: 0;
 	border: 0;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
 
 .headerWrapper{
     height: 5rem;

@@ -1,5 +1,5 @@
 import Header from "./components/Header"
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, HashRouter} from 'react-router-dom';
 import Home from "./components/Home";
 import NossoTrabalho from "./components/NossoTrabalho";
 import SobreNos from "./components/SobreNos";
@@ -10,7 +10,7 @@ function App() {
   const [modal, setModal] = useState(false);
   return (
     <>
-      <Router>
+      <HashRouter hashType="noslash">
         {modal && <Modal setModal={setModal}/>}
         <Header setModal={setModal}/>
         <Routes>
@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/sobre-nos' element={<SobreNos/>}></Route>
           <Route exact path='/quem-somos' element={<QuemSomos/>}></Route>
         </Routes>
-      </Router>
+      </HashRouter>
     </>
   )
 }
